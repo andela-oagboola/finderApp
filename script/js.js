@@ -21,7 +21,7 @@ $(document).ready(function() {
       });
       getDirection.click(function() {
         //alert("sos, someone's lost")
-        $('#option2').hide();
+        $('#option1').hide();
         $("#myMap").css({'left': '-990', 'top': '0px'});
         finder.findLoc();
       });
@@ -53,6 +53,7 @@ $(document).ready(function() {
       searchButton.click( function() {
         //var searchText = document.getElementById('locateTextbox').value;
         //document.getElementById('locateTextbox').value =  "";
+        $('#loader').show();
         if(finder.searchText.val() != "") {
           finder.getLocation(finder.searchText.val());
         }
@@ -85,6 +86,7 @@ $(document).ready(function() {
         center: {lat: lat, lng: longitude}
       }
       var map = new google.maps.Map(document.getElementById('myMap'), mapOptions);
+      $('#loader').hide();
       $('#infoBox').hide();
       $('#locInfo').show();
       $("#myMap").css({'left': '990', 'top': '150px'});
@@ -186,8 +188,8 @@ $(document).ready(function() {
           $( "#infoBox p:nth-child(1)" ).html("Location: "+results[0].formatted_address);
           finder.getInfo(latitude,longitude);
         });
+        $('#infoBox').show();
       })
-      marker.setMap(null);
     },
 
     showAddress: function (map,result, marker, popup) {
@@ -213,10 +215,10 @@ $(document).ready(function() {
         }, function(resp){
           //console.log(resp);
           //console.log(temp);
-          $( "#infoBox p:nth-child(2)" ).html("Latitude: "+lat);
-          $( "#infoBox p:nth-child(3)" ).html("Longitude: "+lng);
-          $( "#infoBox p:nth-child(4)" ).html("timezone");
-          $( "#infoBox p:nth-child(5)" ).html("Temperature: "+temp);
+          $( "#infoBox p:nth-child(3)" ).html("Latitude: "+lat);
+          $( "#infoBox p:nth-child(5)" ).html("Longitude: "+lng);
+          $( "#infoBox p:nth-child(7)" ).html("timezone");
+          $( "#infoBox p:nth-child(9)" ).html("Temperature: "+temp);
           //$('#infoBox').show();
       });
     }

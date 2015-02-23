@@ -7,6 +7,16 @@ button {
   width:150px;
   height:50px;
 }
+img{
+  width: 100px;
+  height: 100px;
+}
+#loader {
+  position: absolute;
+  left: 650px;
+  top: 300px;
+  display: none;
+}
 #header {
   width: :900px;
   height: 50px;
