@@ -1,0 +1,126 @@
+body {
+  background-image: url("../images/1647781.jpg") ;
+}
+button {
+  background-color: teal;
+  color: white;
+  width:150px;
+  height:50px;
+}
+#header {
+  width: :900px;
+  height: 50px;
+  border: 2px solid white;
+  background-color: white;
+  color: teal;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 40px;
+}
+#myMap {
+  width: 350px;
+  height: 400px;
+  /*border: 2px solid black;*/
+  border-radius: 10px;
+  position: absolute;
+  left: -5000px;
+  top: 0;
+  /*visibility: hidden;*/
+}
+
+#infoBox {
+  background-color: rgba(252, 249, 249, 0.7);
+  width: 350px;
+  height: 400px;
+  /*border: 1px solid black;*/
+  border-radius: 10px;
+  position: absolute;
+  top: 150px;
+  left: 990px;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+  display: none;
+}
+#locateTextbox {
+  /*display: none;*/
+  top: 100px; 
+}
+#searchButton {
+  /*display:none;*/
+  top: 180px;
+}
+
+#locationStart {
+  top: 100px; 
+}
+#locationEnd {
+  top: 180px;
+}
+#direct {
+  top: 250px;
+}
+#firstScreen button{
+  position: absolute;
+  width: 150px;
+  left: 100px;
+}
+#findLocation {  
+  top: 100px;  
+}
+#getDirection {
+  top: 180px;
+}
+#mapCheck {
+  top: 250px;
+}
+#locInfo {
+  top: 270px;
+  display: none;
+}
+#mapButton {
+  top: 270px;
+  display: none;
+}
+#firstScreen {
+  /*display: none;*/
+  background-color: rgba(252, 249, 249, 0.7);
+  position: absolute;
+  text-align: center;
+  /*border: 1px solid black;*/
+  width: 350px;
+  height: 400px;
+  left: 10px;
+  border-radius: 20px;
+  top: 150px;
+}
+#option1 {
+  left:500px;
+  top: 150px;
+  display:none;
+  /*visibility: hidden;*/
+}
+#option2 {
+  left:500px;
+  top: 150px;
+  display:none;
+}
+#option1 input, button {
+  position: absolute;
+  width: 150px;
+  left: 100px;
+}
+#option2 input, button {
+  position: absolute;
+  width: 150px;
+  left: 100px;
+}
+body #option1, #option2 {
+  position: absolute;
+  text-align: center;
+  /*border: 1px solid black;*/
+  width: 350px;
+  height: 400px;
+  border-radius: 20px;
+  background-color: rgba(252, 249, 249, 0.7);
+}
